@@ -10,6 +10,13 @@ repositories {
 def allureVersion = "2.19.0",
     slf4jVersion = "1.7.32"
 
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 allure {
     report {
         version.set(allureVersion)
